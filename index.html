@@ -21,5 +21,16 @@
     </script>
     <p>This is my code</p>
     <img src="d3.png" width=600px height=500px />
+    <h3>Difference between V4 and V5 regard loading CSV</h3>
+    <p>D3 now uses Promises instead of asynchronous callbacks
+      to load data. Promises simplify the structure of asynchronous
+      code, especially in modern browsers that support async and await.</p>
+    <p>With the adoption of promises, D3 now uses the Fetch API
+      instead of XMLHttpRequest: the d3-request module has been
+      replaced by d3-fetch. Fetch supports many powerful new features,
+       such as streaming responses. D3 5.0 also deprecates and removes
+       the d3-queue module. Use Promise.all to run a batch of asynchronous
+       tasks in parallel, or a helper library such as p-queue to control
+       concurrency.</p>
   </body>
 </html>
