@@ -6,19 +6,20 @@
     <script type="text/javascript" src="d3.js"></script>
   </head>
   <body>
+    <p>This is the list created by d3.</p>
     <script type="text/javascript">
       var animals=["cat","dog","panda","koala","alligator","tiger","glowworm"];
-      d3.select("body")
+      var ol=d3.select("body")
         .append("ol");
-      d3.select("ol")
+      ol.selectAll("li")
         .data(animals)
         .enter()
         .append("li")
         .text(function(d){
           return d;
         })
-
-
     </script>
+    <p>This is my code</p>
+    <img src="d3.png" width=600px height=500px />
   </body>
 </html>
